@@ -1,0 +1,148 @@
+.coming-soon-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+/* Left side */
+.coming-soon-left {
+  flex: 1;
+  background: url("https://images.unsplash.com/photo-1522202222401-76fc6f3d8d1a?auto=format&fit=crop&w=1600&q=80")
+    center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coming-soon-left .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+.brand-title {
+  font-size: 3rem;
+  font-weight: 800;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #ff6ec7, #6a5acd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Right side */
+.coming-soon-right {
+  flex: 1;
+  background: #0d0d0d;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+.headline {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.subtext {
+  font-size: 1.1rem;
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+/* About section */
+.about-platform {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  animation: fadeUp 1.4s ease-in-out;
+  margin-bottom: 30px;
+}
+.about-platform h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ff6ec7;
+}
+.about-platform p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+.earning-text {
+  margin-top: 12px;
+  color: #ffdf80;
+  font-weight: 500;
+}
+
+/* Social section */
+.social-section {
+  margin-top: auto;
+}
+.social-section p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #aaa;
+}
+.social-icons {
+  display: flex;
+  gap: 18px;
+}
+.social-icons a {
+  font-size: 1.6rem;
+  color: #fff;
+  transition: transform 0.3s, color 0.3s;
+}
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ff6ec7;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .coming-soon-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .coming-soon-left {
+    height: 35vh;
+  }
+  .coming-soon-right {
+    height: 65vh;
+    padding: 40px 20px;
+  }
+  .headline {
+    font-size: 1.8rem;
+  }
+  .about-platform {
+    text-align: left;
+    padding: 20px;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}
