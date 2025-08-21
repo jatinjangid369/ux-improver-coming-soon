@@ -1,6 +1,6 @@
 import React from "react";
 import "./ComingSoon.css";
-import { FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaYoutube, FaInstagram} from "react-icons/fa";
 
 const ComingSoon = () => {
   return (
@@ -38,14 +38,17 @@ const ComingSoon = () => {
         <div className="social-section">
           <p>Follow us for updates:</p>
           <div className="social-icons">
-            <a href="#" aria-label="Twitter">
+            <a href="https://x.com/uximprover?t=gNXymbwy7y3tjy9XqJqkpA&s=09" aria-label="Twitter">
               <FaTwitter />
-            </a>
+              </a>
+            <a href="https://www.instagram.com/uximprover?igsh=czgxNTRsd3AyZ2Zw" aria-label="Instagram">
+              <FaInstagram />
+            {/* </a>
             <a href="#" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
             <a href="#" aria-label="YouTube">
-              <FaYoutube />
+              <FaYoutube /> */}
             </a>
           </div>
         </div>
