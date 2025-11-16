@@ -28,7 +28,7 @@ const ComingSoon = () => {
             directly from the people who matter most: their users.
           </p>
           <p className="earning-text">
-            💸 As a tester, you can also earn money by reviewing products and
+            As a tester, you can also earn money by reviewing products and
             sharing your honest feedback. The more you test, the more you earn —
             while helping companies build better experiences.
           </p>
